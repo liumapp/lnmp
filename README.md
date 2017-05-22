@@ -5,5 +5,5 @@
 
 ### 文档
 
-(官方文档)[http://www.liumapp.com/articles/2017/04/20/1492658108249.html]
+[官方文档](http://www.liumapp.com/articles/2017/04/20/1492658108249.html)
 
