@@ -4,6 +4,7 @@ machine=x86_64
 else
 machine=i686
 fi
+
 if [ $machine == "x86_64" ];then
   rm -rf mysql-5.5.37-linux2.6-x86_64
   if [ ! -f mysql-5.5.37-linux2.6-x86_64.tar.gz ];then
@@ -33,3 +34,5 @@ sed -i 's#^datadir=$#datadir=/alidata/server/mysql/data#' /etc/init.d/mysqld
 sed -i 's#skip-external-locking#skip-external-locking\nlog-error=/alidata/log/mysql/error.log#' /etc/my.cnf
 chmod 755 /etc/init.d/mysqld
 /etc/init.d/mysqld start
+
+
